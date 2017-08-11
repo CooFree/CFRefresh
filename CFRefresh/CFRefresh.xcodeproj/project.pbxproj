@@ -13,6 +13,10 @@
 		B86DC5E81F3D8B2000210491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86DC5E71F3D8B2000210491 /* Assets.xcassets */; };
 		B86DC5EB1F3D8B2000210491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86DC5E91F3D8B2000210491 /* LaunchScreen.storyboard */; };
 		B86DC5EE1F3D8B2000210491 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B86DC5ED1F3D8B2000210491 /* main.m */; };
+		B86DC5FB1F3D917500210491 /* TGRefreshOC.m in Sources */ = {isa = PBXBuildFile; fileRef = B86DC5F81F3D916700210491 /* TGRefreshOC.m */; };
+		B86DC5FC1F3D917500210491 /* UIScrollView+TGRefreshOC.m in Sources */ = {isa = PBXBuildFile; fileRef = B86DC5FA1F3D916700210491 /* UIScrollView+TGRefreshOC.m */; };
+		B86DC5FD1F3D917E00210491 /* TGRefreshOC.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B86DC5F61F3D916700210491 /* TGRefreshOC.bundle */; };
+		B86DC6001F3D920600210491 /* QQRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86DC5FF1F3D920600210491 /* QQRefreshTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		B86DC5EA1F3D8B2000210491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B86DC5EC1F3D8B2000210491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B86DC5ED1F3D8B2000210491 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B86DC5F51F3D916700210491 /* TGRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGRefresh.h; sourceTree = "<group>"; };
+		B86DC5F61F3D916700210491 /* TGRefreshOC.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TGRefreshOC.bundle; sourceTree = "<group>"; };
+		B86DC5F71F3D916700210491 /* TGRefreshOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGRefreshOC.h; sourceTree = "<group>"; };
+		B86DC5F81F3D916700210491 /* TGRefreshOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGRefreshOC.m; sourceTree = "<group>"; };
+		B86DC5F91F3D916700210491 /* UIScrollView+TGRefreshOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TGRefreshOC.h"; sourceTree = "<group>"; };
+		B86DC5FA1F3D916700210491 /* UIScrollView+TGRefreshOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TGRefreshOC.m"; sourceTree = "<group>"; };
+		B86DC5FE1F3D920600210491 /* QQRefreshTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQRefreshTableViewController.h; sourceTree = "<group>"; };
+		B86DC5FF1F3D920600210491 /* QQRefreshTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQRefreshTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,9 @@
 				B86DC5DF1F3D8B2000210491 /* AppDelegate.m */,
 				B86DC5E11F3D8B2000210491 /* ViewController.h */,
 				B86DC5E21F3D8B2000210491 /* ViewController.m */,
+				B86DC5FE1F3D920600210491 /* QQRefreshTableViewController.h */,
+				B86DC5FF1F3D920600210491 /* QQRefreshTableViewController.m */,
+				B86DC5F41F3D916700210491 /* TGRefreshOC */,
 				B86DC5E41F3D8B2000210491 /* Main.storyboard */,
 				B86DC5E71F3D8B2000210491 /* Assets.xcassets */,
 				B86DC5E91F3D8B2000210491 /* LaunchScreen.storyboard */,
@@ -69,6 +84,19 @@
 				B86DC5ED1F3D8B2000210491 /* main.m */,
 			);
 			path = CFRefresh;
+			sourceTree = "<group>";
+		};
+		B86DC5F41F3D916700210491 /* TGRefreshOC */ = {
+			isa = PBXGroup;
+			children = (
+				B86DC5F51F3D916700210491 /* TGRefresh.h */,
+				B86DC5F61F3D916700210491 /* TGRefreshOC.bundle */,
+				B86DC5F71F3D916700210491 /* TGRefreshOC.h */,
+				B86DC5F81F3D916700210491 /* TGRefreshOC.m */,
+				B86DC5F91F3D916700210491 /* UIScrollView+TGRefreshOC.h */,
+				B86DC5FA1F3D916700210491 /* UIScrollView+TGRefreshOC.m */,
+			);
+			path = TGRefreshOC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B86DC5FD1F3D917E00210491 /* TGRefreshOC.bundle in Resources */,
 				B86DC5EB1F3D8B2000210491 /* LaunchScreen.storyboard in Resources */,
 				B86DC5E81F3D8B2000210491 /* Assets.xcassets in Resources */,
 				B86DC5E61F3D8B2000210491 /* Main.storyboard in Resources */,
@@ -141,6 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B86DC5FB1F3D917500210491 /* TGRefreshOC.m in Sources */,
+				B86DC6001F3D920600210491 /* QQRefreshTableViewController.m in Sources */,
+				B86DC5FC1F3D917500210491 /* UIScrollView+TGRefreshOC.m in Sources */,
 				B86DC5E31F3D8B2000210491 /* ViewController.m in Sources */,
 				B86DC5EE1F3D8B2000210491 /* main.m in Sources */,
 				B86DC5E01F3D8B2000210491 /* AppDelegate.m in Sources */,
@@ -312,6 +344,7 @@
 				B86DC5F31F3D8B2000210491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

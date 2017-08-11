@@ -8,22 +8,55 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray *data;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    self.data = @[@"QQRefreshTableViewController"];
+    [self.view addSubview:self.tableView];
+
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSArray *)data {
+    if (_data == nil) {
+        _data = [NSArray array];
+    }
+    return _data;
+}
+- (UITableView *)tableView {
+    if(!_tableView){
+        UITableView *tab = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+        tab.dataSource = self;
+        tab.delegate = self;
+        //        tab.backgroundColor = [UIColor whiteColor];
+        [tab registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+        [self.view addSubview:tab];
+        _tableView = tab;
+        _tableView.frame=self.view.bounds;
+    }
+    return _tableView;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIViewController *vc = [NSClassFromString(self.data[indexPath.row]) new] ;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.data.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    cell.textLabel.text = self.data[indexPath.row];
+    
+    return cell;
+}
 
 @end
