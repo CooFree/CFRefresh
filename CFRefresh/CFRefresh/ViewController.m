@@ -19,7 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.data = @[@"QQRefreshTableViewController"];
+    self.data = @[@{
+                      @"type":@"QQRefreshTableViewController",
+                      @"title":@"仿QQ刷新滴水效果"}
+                  ];
     [self.view addSubview:self.tableView];
 
 }
@@ -45,7 +48,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIViewController *vc = [NSClassFromString(self.data[indexPath.row]) new] ;
+
+    UIViewController *vc = [NSClassFromString(self.data[indexPath.row][@"type"]) new] ;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -54,7 +58,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    cell.textLabel.text = self.data[indexPath.row];
+    cell.textLabel.text = self.data[indexPath.row][@"title"];
     
     return cell;
 }
