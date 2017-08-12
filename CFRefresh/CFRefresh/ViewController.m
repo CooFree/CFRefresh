@@ -21,7 +21,11 @@
 
     self.data = @[@{
                       @"type":@"QQRefreshTableViewController",
-                      @"title":@"仿QQ刷新滴水效果"}
+                      @"title":@"仿QQ刷新滴水效果"},
+                  @{
+                      @"type":@"XHJDRefreshDemoTableViewController",
+                      @"title":@"仿京东刷新效果"}
+
                   ];
     [self.view addSubview:self.tableView];
 
