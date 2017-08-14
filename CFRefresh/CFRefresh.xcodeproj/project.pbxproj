@@ -40,6 +40,20 @@
 		B86DC5FC1F3D917500210491 /* UIScrollView+TGRefreshOC.m in Sources */ = {isa = PBXBuildFile; fileRef = B86DC5FA1F3D916700210491 /* UIScrollView+TGRefreshOC.m */; };
 		B86DC5FD1F3D917E00210491 /* TGRefreshOC.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B86DC5F61F3D916700210491 /* TGRefreshOC.bundle */; };
 		B86DC6001F3D920600210491 /* QQRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86DC5FF1F3D920600210491 /* QQRefreshTableViewController.m */; };
+		B88D01621F4189BC005FB406 /* NewsListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D01481F4189A0005FB406 /* NewsListTVC.m */; };
+		B88D01631F4189BC005FB406 /* CAAnimation+CoreRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D014C1F4189A8005FB406 /* CAAnimation+CoreRefresh.m */; };
+		B88D01641F4189BC005FB406 /* CoreFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D014E1F4189A8005FB406 /* CoreFooterView.m */; };
+		B88D01651F4189BC005FB406 /* CoreHeaderShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D01511F4189A8005FB406 /* CoreHeaderShowView.m */; };
+		B88D01661F4189BC005FB406 /* CoreHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D01541F4189A8005FB406 /* CoreHeaderView.m */; };
+		B88D01671F4189BC005FB406 /* CoreRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D01571F4189A8005FB406 /* CoreRefreshConst.m */; };
+		B88D01681F4189BC005FB406 /* CoreRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D015B1F4189A8005FB406 /* CoreRefreshView.m */; };
+		B88D01691F4189BC005FB406 /* UIScrollView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D015D1F4189A8005FB406 /* UIScrollView+Extension.m */; };
+		B88D016A1F4189BC005FB406 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D015F1F4189A8005FB406 /* UIScrollView+Refresh.m */; };
+		B88D016B1F4189BC005FB406 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D01611F4189A8005FB406 /* UIView+Extension.m */; };
+		B88D016C1F4189C5005FB406 /* CoreRefreshResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B88D01591F4189A8005FB406 /* CoreRefreshResource.bundle */; };
+		B88D016D1F418A2F005FB406 /* CoreFooterView.xib in Sources */ = {isa = PBXBuildFile; fileRef = B88D014F1F4189A8005FB406 /* CoreFooterView.xib */; };
+		B88D016E1F418A2F005FB406 /* CoreHeaderShowView.xib in Sources */ = {isa = PBXBuildFile; fileRef = B88D01521F4189A8005FB406 /* CoreHeaderShowView.xib */; };
+		B88D016F1F418A2F005FB406 /* CoreHeaderView.xib in Sources */ = {isa = PBXBuildFile; fileRef = B88D01551F4189A8005FB406 /* CoreHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +114,31 @@
 		B86DC5FA1F3D916700210491 /* UIScrollView+TGRefreshOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TGRefreshOC.m"; sourceTree = "<group>"; };
 		B86DC5FE1F3D920600210491 /* QQRefreshTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQRefreshTableViewController.h; sourceTree = "<group>"; };
 		B86DC5FF1F3D920600210491 /* QQRefreshTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQRefreshTableViewController.m; sourceTree = "<group>"; };
+		B88D01481F4189A0005FB406 /* NewsListTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsListTVC.m; sourceTree = "<group>"; };
+		B88D01491F4189A0005FB406 /* NewsListTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsListTVC.h; sourceTree = "<group>"; };
+		B88D014B1F4189A8005FB406 /* CAAnimation+CoreRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+CoreRefresh.h"; sourceTree = "<group>"; };
+		B88D014C1F4189A8005FB406 /* CAAnimation+CoreRefresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+CoreRefresh.m"; sourceTree = "<group>"; };
+		B88D014D1F4189A8005FB406 /* CoreFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreFooterView.h; sourceTree = "<group>"; };
+		B88D014E1F4189A8005FB406 /* CoreFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreFooterView.m; sourceTree = "<group>"; };
+		B88D014F1F4189A8005FB406 /* CoreFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreFooterView.xib; sourceTree = "<group>"; };
+		B88D01501F4189A8005FB406 /* CoreHeaderShowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreHeaderShowView.h; sourceTree = "<group>"; };
+		B88D01511F4189A8005FB406 /* CoreHeaderShowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreHeaderShowView.m; sourceTree = "<group>"; };
+		B88D01521F4189A8005FB406 /* CoreHeaderShowView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreHeaderShowView.xib; sourceTree = "<group>"; };
+		B88D01531F4189A8005FB406 /* CoreHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreHeaderView.h; sourceTree = "<group>"; };
+		B88D01541F4189A8005FB406 /* CoreHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreHeaderView.m; sourceTree = "<group>"; };
+		B88D01551F4189A8005FB406 /* CoreHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreHeaderView.xib; sourceTree = "<group>"; };
+		B88D01561F4189A8005FB406 /* CoreRefreshConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreRefreshConst.h; sourceTree = "<group>"; };
+		B88D01571F4189A8005FB406 /* CoreRefreshConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreRefreshConst.m; sourceTree = "<group>"; };
+		B88D01581F4189A8005FB406 /* CoreRefreshEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreRefreshEntry.h; sourceTree = "<group>"; };
+		B88D01591F4189A8005FB406 /* CoreRefreshResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CoreRefreshResource.bundle; sourceTree = "<group>"; };
+		B88D015A1F4189A8005FB406 /* CoreRefreshView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreRefreshView.h; sourceTree = "<group>"; };
+		B88D015B1F4189A8005FB406 /* CoreRefreshView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreRefreshView.m; sourceTree = "<group>"; };
+		B88D015C1F4189A8005FB406 /* UIScrollView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Extension.h"; sourceTree = "<group>"; };
+		B88D015D1F4189A8005FB406 /* UIScrollView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Extension.m"; sourceTree = "<group>"; };
+		B88D015E1F4189A8005FB406 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
+		B88D015F1F4189A8005FB406 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		B88D01601F4189A8005FB406 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		B88D01611F4189A8005FB406 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +254,9 @@
 				B86DC5E21F3D8B2000210491 /* ViewController.m */,
 				B86DC5FE1F3D920600210491 /* QQRefreshTableViewController.h */,
 				B86DC5FF1F3D920600210491 /* QQRefreshTableViewController.m */,
+				B88D01491F4189A0005FB406 /* NewsListTVC.h */,
+				B88D01481F4189A0005FB406 /* NewsListTVC.m */,
+				B88D014A1F4189A8005FB406 /* CoreRefresh */,
 				B832086F1F3EEB130088497F /* JDRefresh2 */,
 				B86DC5F41F3D916700210491 /* TGRefreshOC */,
 				B86DC5E41F3D8B2000210491 /* Main.storyboard */,
@@ -238,6 +280,36 @@
 				B86DC5FA1F3D916700210491 /* UIScrollView+TGRefreshOC.m */,
 			);
 			path = TGRefreshOC;
+			sourceTree = "<group>";
+		};
+		B88D014A1F4189A8005FB406 /* CoreRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				B88D014B1F4189A8005FB406 /* CAAnimation+CoreRefresh.h */,
+				B88D014C1F4189A8005FB406 /* CAAnimation+CoreRefresh.m */,
+				B88D014D1F4189A8005FB406 /* CoreFooterView.h */,
+				B88D014E1F4189A8005FB406 /* CoreFooterView.m */,
+				B88D014F1F4189A8005FB406 /* CoreFooterView.xib */,
+				B88D01501F4189A8005FB406 /* CoreHeaderShowView.h */,
+				B88D01511F4189A8005FB406 /* CoreHeaderShowView.m */,
+				B88D01521F4189A8005FB406 /* CoreHeaderShowView.xib */,
+				B88D01531F4189A8005FB406 /* CoreHeaderView.h */,
+				B88D01541F4189A8005FB406 /* CoreHeaderView.m */,
+				B88D01551F4189A8005FB406 /* CoreHeaderView.xib */,
+				B88D01561F4189A8005FB406 /* CoreRefreshConst.h */,
+				B88D01571F4189A8005FB406 /* CoreRefreshConst.m */,
+				B88D01581F4189A8005FB406 /* CoreRefreshEntry.h */,
+				B88D01591F4189A8005FB406 /* CoreRefreshResource.bundle */,
+				B88D015A1F4189A8005FB406 /* CoreRefreshView.h */,
+				B88D015B1F4189A8005FB406 /* CoreRefreshView.m */,
+				B88D015C1F4189A8005FB406 /* UIScrollView+Extension.h */,
+				B88D015D1F4189A8005FB406 /* UIScrollView+Extension.m */,
+				B88D015E1F4189A8005FB406 /* UIScrollView+Refresh.h */,
+				B88D015F1F4189A8005FB406 /* UIScrollView+Refresh.m */,
+				B88D01601F4189A8005FB406 /* UIView+Extension.h */,
+				B88D01611F4189A8005FB406 /* UIView+Extension.m */,
+			);
+			path = CoreRefresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88D016C1F4189C5005FB406 /* CoreRefreshResource.bundle in Resources */,
 				B83208AC1F3EEE910088497F /* box@2x.png in Resources */,
 				B83208AD1F3EEE910088497F /* deliveryStaff0@2x.png in Resources */,
 				B83208AE1F3EEE910088497F /* deliveryStaff1@2x.png in Resources */,
@@ -319,6 +392,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88D016D1F418A2F005FB406 /* CoreFooterView.xib in Sources */,
+				B88D016E1F418A2F005FB406 /* CoreHeaderShowView.xib in Sources */,
+				B88D016F1F418A2F005FB406 /* CoreHeaderView.xib in Sources */,
+				B88D01621F4189BC005FB406 /* NewsListTVC.m in Sources */,
+				B88D01631F4189BC005FB406 /* CAAnimation+CoreRefresh.m in Sources */,
+				B88D01641F4189BC005FB406 /* CoreFooterView.m in Sources */,
+				B88D01651F4189BC005FB406 /* CoreHeaderShowView.m in Sources */,
+				B88D01661F4189BC005FB406 /* CoreHeaderView.m in Sources */,
+				B88D01671F4189BC005FB406 /* CoreRefreshConst.m in Sources */,
+				B88D01681F4189BC005FB406 /* CoreRefreshView.m in Sources */,
+				B88D01691F4189BC005FB406 /* UIScrollView+Extension.m in Sources */,
+				B88D016A1F4189BC005FB406 /* UIScrollView+Refresh.m in Sources */,
+				B88D016B1F4189BC005FB406 /* UIView+Extension.m in Sources */,
 				B832089F1F3EEDAD0088497F /* NSDate+TimeAgo.m in Sources */,
 				B83208A01F3EEDAD0088497F /* XHJDRefreshView.m in Sources */,
 				B83208A11F3EEDAD0088497F /* XHCircleView.m in Sources */,
