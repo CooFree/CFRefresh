@@ -27,7 +27,10 @@
                       @"title":@"仿京东刷新效果"},
                   @{
                       @"type":@"NewsListTVC",
-                      @"title":@"刷新效果"}
+                      @"title":@"刷新效果"},
+                  @{
+                      @"type":@"WritingRefreshViewController",
+                      @"title":@"写字刷新效果"}
                   ];
     [self.view addSubview:self.tableView];
 

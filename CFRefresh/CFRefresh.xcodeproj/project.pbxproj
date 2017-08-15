@@ -54,6 +54,10 @@
 		B88D016D1F418A2F005FB406 /* CoreFooterView.xib in Sources */ = {isa = PBXBuildFile; fileRef = B88D014F1F4189A8005FB406 /* CoreFooterView.xib */; };
 		B88D016E1F418A2F005FB406 /* CoreHeaderShowView.xib in Sources */ = {isa = PBXBuildFile; fileRef = B88D01521F4189A8005FB406 /* CoreHeaderShowView.xib */; };
 		B88D016F1F418A2F005FB406 /* CoreHeaderView.xib in Sources */ = {isa = PBXBuildFile; fileRef = B88D01551F4189A8005FB406 /* CoreHeaderView.xib */; };
+		B88D01721F418C58005FB406 /* WritingRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D01711F418C58005FB406 /* WritingRefreshViewController.m */; };
+		B88D017B1F418EE0005FB406 /* UIBezierPath+ZJText.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D01761F418ECE005FB406 /* UIBezierPath+ZJText.m */; };
+		B88D017C1F418EE0005FB406 /* UIScrollView+PDFooterRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D01781F418ECE005FB406 /* UIScrollView+PDFooterRefreshView.m */; };
+		B88D017D1F418EE0005FB406 /* UIScrollView+PDHeaderRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D017A1F418ECE005FB406 /* UIScrollView+PDHeaderRefreshView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +143,15 @@
 		B88D015F1F4189A8005FB406 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
 		B88D01601F4189A8005FB406 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		B88D01611F4189A8005FB406 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		B88D01701F418C58005FB406 /* WritingRefreshViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WritingRefreshViewController.h; sourceTree = "<group>"; };
+		B88D01711F418C58005FB406 /* WritingRefreshViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WritingRefreshViewController.m; sourceTree = "<group>"; };
+		B88D01741F418ECE005FB406 /* PDPullToRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDPullToRefresh.h; sourceTree = "<group>"; };
+		B88D01751F418ECE005FB406 /* UIBezierPath+ZJText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+ZJText.h"; sourceTree = "<group>"; };
+		B88D01761F418ECE005FB406 /* UIBezierPath+ZJText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+ZJText.m"; sourceTree = "<group>"; };
+		B88D01771F418ECE005FB406 /* UIScrollView+PDFooterRefreshView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+PDFooterRefreshView.h"; sourceTree = "<group>"; };
+		B88D01781F418ECE005FB406 /* UIScrollView+PDFooterRefreshView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PDFooterRefreshView.m"; sourceTree = "<group>"; };
+		B88D01791F418ECE005FB406 /* UIScrollView+PDHeaderRefreshView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+PDHeaderRefreshView.h"; sourceTree = "<group>"; };
+		B88D017A1F418ECE005FB406 /* UIScrollView+PDHeaderRefreshView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PDHeaderRefreshView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +269,9 @@
 				B86DC5FF1F3D920600210491 /* QQRefreshTableViewController.m */,
 				B88D01491F4189A0005FB406 /* NewsListTVC.h */,
 				B88D01481F4189A0005FB406 /* NewsListTVC.m */,
+				B88D01701F418C58005FB406 /* WritingRefreshViewController.h */,
+				B88D01711F418C58005FB406 /* WritingRefreshViewController.m */,
+				B88D01731F418ECE005FB406 /* 文字绘写 */,
 				B88D014A1F4189A8005FB406 /* CoreRefresh */,
 				B832086F1F3EEB130088497F /* JDRefresh2 */,
 				B86DC5F41F3D916700210491 /* TGRefreshOC */,
@@ -310,6 +326,20 @@
 				B88D01611F4189A8005FB406 /* UIView+Extension.m */,
 			);
 			path = CoreRefresh;
+			sourceTree = "<group>";
+		};
+		B88D01731F418ECE005FB406 /* 文字绘写 */ = {
+			isa = PBXGroup;
+			children = (
+				B88D01741F418ECE005FB406 /* PDPullToRefresh.h */,
+				B88D01751F418ECE005FB406 /* UIBezierPath+ZJText.h */,
+				B88D01761F418ECE005FB406 /* UIBezierPath+ZJText.m */,
+				B88D01771F418ECE005FB406 /* UIScrollView+PDFooterRefreshView.h */,
+				B88D01781F418ECE005FB406 /* UIScrollView+PDFooterRefreshView.m */,
+				B88D01791F418ECE005FB406 /* UIScrollView+PDHeaderRefreshView.h */,
+				B88D017A1F418ECE005FB406 /* UIScrollView+PDHeaderRefreshView.m */,
+			);
+			path = "文字绘写";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,6 +422,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88D017B1F418EE0005FB406 /* UIBezierPath+ZJText.m in Sources */,
+				B88D017C1F418EE0005FB406 /* UIScrollView+PDFooterRefreshView.m in Sources */,
+				B88D017D1F418EE0005FB406 /* UIScrollView+PDHeaderRefreshView.m in Sources */,
 				B88D016D1F418A2F005FB406 /* CoreFooterView.xib in Sources */,
 				B88D016E1F418A2F005FB406 /* CoreHeaderShowView.xib in Sources */,
 				B88D016F1F418A2F005FB406 /* CoreHeaderView.xib in Sources */,
@@ -399,6 +432,7 @@
 				B88D01631F4189BC005FB406 /* CAAnimation+CoreRefresh.m in Sources */,
 				B88D01641F4189BC005FB406 /* CoreFooterView.m in Sources */,
 				B88D01651F4189BC005FB406 /* CoreHeaderShowView.m in Sources */,
+				B88D01721F418C58005FB406 /* WritingRefreshViewController.m in Sources */,
 				B88D01661F4189BC005FB406 /* CoreHeaderView.m in Sources */,
 				B88D01671F4189BC005FB406 /* CoreRefreshConst.m in Sources */,
 				B88D01681F4189BC005FB406 /* CoreRefreshView.m in Sources */,

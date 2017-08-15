@@ -34,7 +34,7 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSMutableArray *dataSource = [[NSMutableArray alloc] init];
         for (int i = 0; i < 100; i ++) {
-            [dataSource addObject:@"请问你现在在哪里啊？我在广州天河"];
+            [dataSource addObject:[NSString stringWithFormat:@"%zd",i]];
         }
         
         NSMutableArray *indexPaths;
